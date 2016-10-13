@@ -19,4 +19,6 @@ class TestBasics(unittest.Testcase):
 	def test_toomanythings(self):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +") 
-
+	def test_exponentiate(self):
+		with rpn.calculate("2 2 **")
+		self.assertEqual(4, result)
