@@ -1,2 +1,4 @@
+language: python
 python:
-install: "pip install -r requirements.txt"
+ - "3.5"
+script: nosetests
