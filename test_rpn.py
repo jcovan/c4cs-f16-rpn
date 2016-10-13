@@ -1,5 +1,4 @@
 import unittest
-
 import rpn
 
 class TestBasics(unittest.Testcase):
@@ -20,5 +19,5 @@ class TestBasics(unittest.Testcase):
 		with self.assertRaises(TypeError):
 			rpn.calculate("1 2 3 +") 
 	def test_exponentiate(self):
-		with rpn.calculate("2 2 **")
+		result = rpn.calculate("2 2 ^")
 		self.assertEqual(4, result)
