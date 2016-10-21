@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
- 
+
+from colorama import Fore, Back 
+import readline
 import operator
 
 operators = {
@@ -11,6 +13,7 @@ operators = {
 }
 
 def calculate(myarg1):
+	print(Back.BLACK+Fore.BLUE+myarg1)
 	stack = list()
 	for token in myarg1.split():
 		try:
@@ -28,7 +31,7 @@ def calculate(myarg1):
 
 def main():
 	while True:
-		calculate(input("rpn calc> "))
+		calculate(input(Back.WHITE+Fore.GREEN+"rpn calc> "+Back.BLACK+Fore.GREEN))
 
 if __name__ == '__main__':
 	main()
