@@ -29,7 +29,8 @@ def calculate(myarg1):
 	if len(stack) != 1:
 		raise TypeError
 	return stack.pop()
-
+	if len(stack) == 2:
+		print("hi")
 def main():
 	while True:
 		calculate(input(Back.WHITE+Fore.GREEN+"rpn calc> "+Back.BLACK+Fore.GREEN))
